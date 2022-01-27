@@ -1,0 +1,49 @@
+.App {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.Card_active{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  box-shadow: 1px 1px 10px #939393;
+}
+.Card_active:hover{
+  box-shadow: 1px 1px 10px black;
+}
+.Card_unactive{
+  display: none;
+}
+
+.Exercise{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.question, .answer{
+  width: 100px;
+  height: 50px;
+  background-color: bisque;
+  margin: 10px;
+}
+
+.answers{
+  display: flex;
+  justify-content: space-evenly;
+}
