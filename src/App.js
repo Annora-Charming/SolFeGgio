@@ -1,7 +1,7 @@
 import './App.css';
-import Card from "./Card";
-import Exercise from "./Exercise";
-import MusicalEx from "./MusicalEx";
+import Card from "./components/Card";
+import Exercise from "./components/Exercise";
+import MusicalEx from "./components/MusicalEx";
 
 function App() {
   return (

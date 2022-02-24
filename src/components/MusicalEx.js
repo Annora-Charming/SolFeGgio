@@ -1,15 +1,15 @@
 import useSound from "use-sound";
-import "./App.css"
-import sound1 from "./sounds/a6.mp3";
-import sound2 from "./sounds/b6.mp3";
-import sound3 from "./sounds/blink.mp3";
-import sound4 from "./sounds/c7.mp3";
-import sound5 from "./sounds/e.mp3";
-import sound6 from "./sounds/f6.mp3";
-import sound7 from "./sounds/g6.mp3";
-import sound8 from "./sounds/rain.mp3";
-import sound9 from "./sounds/random.mp3";
-import sound10 from "./sounds/still.mp3";
+import "../App.css"
+import sound1 from "../sounds/a6.mp3";
+import sound2 from "../sounds/b6.mp3";
+import sound3 from "../sounds/blink.mp3";
+import sound4 from "../sounds/c7.mp3";
+import sound5 from "../sounds/e.mp3";
+import sound6 from "../sounds/f6.mp3";
+import sound7 from "../sounds/g6.mp3";
+import sound8 from "../sounds/rain.mp3";
+import sound9 from "../sounds/random.mp3";
+import sound10 from "../sounds/still.mp3";
 import React from "react";
 
 function MusicalEx(){
