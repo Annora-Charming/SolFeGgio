@@ -1,15 +1,17 @@
 import './genStyles.css';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import MainPageGuest from "./pages/MainPageGuest";
+import TheoryMainPageGuest from "./pages/TheoryMainPageGuest";
+import ExerciseMainPageGuest from "./pages/ExerciseMainPageGuest";
+import TheoryFirstSectionPageGuest from "./pages/TheoryFirstSectionPageGuest";
 
 function NEWAPP() {
     return (
-        <div>
-            <Header/>
-            <p>This is a test</p>
-            <Footer/>
-        </div>
-    );
+        // <MainPageGuest/>
+        // <TheoryMainPageGuest/>
+    // <ExerciseMainPageGuest/>
+    <TheoryFirstSectionPageGuest/>
+)
+    ;
 }
 
 export default NEWAPP;

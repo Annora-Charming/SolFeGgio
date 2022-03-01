@@ -1,3 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, #root, .wrapper {
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+.outerContent{
+    flex: 2 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.innerContent {
+    padding: 3%;
+    width: 90%;
+    background-color: rgba(248, 246, 246, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.intro{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.introText{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+footer, header {
+    flex: 0 0 auto;
+}
+
+
 header{
     background-color: rgba(220, 230, 255, 1);
     display: flex;
@@ -13,10 +62,55 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     height: 20vh;
-
 }
 
 footer .motto, .links, .copyright{
     display: flex;
+    flex-direction: column;
+}
+
+nav{
+    padding: 1% 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infoCard{
+    width: 500px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.infoCard button, .lessonsList button {
+    width: 200px;
+    align-self: end;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lessonsList{
+    background-color: rgba(255, 255, 255, 1);
+    width: 800px;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+}
+.lessonsListBox{
+    display: flex;
+    align-items: start;
     flex-direction: column;
 }
