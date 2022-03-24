@@ -1,12 +1,10 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import NavBar from "../../components/NavBar";
 
 function TheoryMainPageGuest() {
     return (
         <div className="wrapper">
-            <Header/>
-            <NavBar/>
             <div className="outerContent">
                 <div className="intro">
                     <div className="introText">
@@ -14,7 +12,7 @@ function TheoryMainPageGuest() {
                         <p>В этом разделе находится огромное количество теоретического материала, полезного при освоении
                             сольфеджио.</p>
                     </div>
-                    <img src="../../public/Hippo.png"/>
+                    <img src="../../../public/Hippo.png"/>
                 </div>
                 <div className="innerContent">
                     <div className="box">
@@ -43,7 +41,6 @@ function TheoryMainPageGuest() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

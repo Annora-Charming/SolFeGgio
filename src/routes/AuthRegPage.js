@@ -120,8 +120,6 @@ function AuthRegPage() {
 
     return (
         <div className="wrapper">
-            <Header/>
-            <NavBar/>
             <div className="outerContent">
                 <div className="authRegForm">
                     {checkIsAuth("tabs")}
@@ -131,7 +129,6 @@ function AuthRegPage() {
                 </div>
                 <h1>{testResult}</h1>
             </div>
-            <Footer/>
         </div>
     );
 }

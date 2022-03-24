@@ -1,12 +1,10 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import NavBar from "../../components/NavBar";
 
 function ExerciseMainPageGuest() {
     return (
         <div className="wrapper">
-            <Header/>
-            <NavBar/>
             <div className="outerContent">
                 <div className="intro">
                     <div className="introText">
@@ -14,7 +12,7 @@ function ExerciseMainPageGuest() {
                         <p>В этом разделе можно решать практические упражнения и тесты чтобы закрепить или повторить
                             материал. </p>
                     </div>
-                    <img src="../../public/Hippo.png"/>
+                    <img src="../../../public/Hippo.png"/>
                 </div>
                 <div className="innerContent">
                     <div className="box">
@@ -43,7 +41,6 @@ function ExerciseMainPageGuest() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

@@ -1,25 +1,18 @@
-import './App.css';
-import Card from "./components/Card";
-import Exercise from "./components/Exercise";
-import MusicalEx from "./components/MusicalEx";
+import './genStyles.css';
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <div className="cardsContainer">
-        <Card></Card>
-        <Card></Card>
-      </div>
-      <div className="cardsContainer">
-        <Card></Card>
-        <Card></Card>
-      </div>
-      <div className="exerciseContainer">
-          <Exercise></Exercise>
-      </div>
-      <MusicalEx></MusicalEx>
-    </div>
-  );
+    return (
+        <div className="wrapper">
+            <Header/>
+            <NavBar/>
+            <Outlet />
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
