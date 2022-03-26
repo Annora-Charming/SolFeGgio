@@ -1,7 +1,5 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
 import React from "react";
+import {useNavigate} from 'react-router-dom';
 
 function AuthRegPage() {
     const [role, setRole] = React.useState("guest");
@@ -11,6 +9,7 @@ function AuthRegPage() {
     const [password, setPassword] = React.useState("");
     const [errorText, setErrorText] = React.useState("");
     const [testResult, setTestResult] = React.useState("");
+    const navigate = useNavigate();
 
     async function authentication() {
         setTestResult("");
@@ -22,7 +21,8 @@ function AuthRegPage() {
             const res = await response.json();
             if (res === "It's admin") {
                 setRole("Admin");
-                console.log("It was Admin")
+                console.log("It was Admin");
+                navigate("/admin");
             } else if (res === "It's user") {
                 setRole("User");
                 console.log("It was User");

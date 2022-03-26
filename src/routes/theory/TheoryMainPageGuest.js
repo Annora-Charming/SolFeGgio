@@ -1,8 +1,7 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import NavBar from "../../components/NavBar";
+import {useNavigate} from "react-router-dom";
 
 function TheoryMainPageGuest() {
+    const navigate = useNavigate();
     return (
         <div className="wrapper">
             <div className="outerContent">
@@ -15,11 +14,14 @@ function TheoryMainPageGuest() {
                     <img src="../../../public/Hippo.png"/>
                 </div>
                 <div className="innerContent">
+                    <p onClick={() => navigate("/")}>Назад</p>
                     <div className="box">
                         <div className="infoCard">
                             <h3>Нотная грамота</h3>
                             <p>бла бла бла</p>
-                            <button>Читать</button>
+                            <button onClick={() => navigate("/theory/thSec1")}>
+                                Читать
+                            </button>
                         </div>
                         <div className="infoCard">
                             <h3>Интервалы</h3>
