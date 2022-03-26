@@ -2,7 +2,7 @@ function Footer() {
     return(
         <footer>
             <div className="motto">
-                <img src="../../public/footerIcon.png" alt="Иконка с нотами" width="89"/>
+                <img src="/footerIcon.png" alt="Иконка с нотами" width="89"/>
                 <p>Музыка — универсальный язык человечества
                 </p>
             </div>
