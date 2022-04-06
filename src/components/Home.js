@@ -8,7 +8,7 @@ function Home(){
                         теоретический
                         материал и практические задания для его запоминания.</p>
                 </div>
-                <img src="../../public/Hippo.png" alt="hippo"/>
+                <img src="/Hippo.png" alt="hippo"/>
             </div>
             <div className="innerContent">
                 <div className="box">

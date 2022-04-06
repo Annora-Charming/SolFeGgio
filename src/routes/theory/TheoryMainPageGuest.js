@@ -11,7 +11,7 @@ function TheoryMainPageGuest() {
                         <p>В этом разделе находится огромное количество теоретического материала, полезного при освоении
                             сольфеджио.</p>
                     </div>
-                    <img src="../../../public/Hippo.png"/>
+                    <img src="/Hippo.png"/>
                 </div>
                 <div className="innerContent">
                     <p onClick={() => navigate("/")}>Назад</p>

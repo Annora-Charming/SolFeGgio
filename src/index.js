@@ -11,6 +11,12 @@ import Home from "./components/Home";
 import Admin from "./routes/Admin";
 import ThSec1 from "./routes/theory/section1/thSec1";
 import ThSec1Lesson1 from "./routes/theory/section1/lesson1/thSec1Lesson1";
+import ThSec1Lesson2 from "./routes/theory/section1/lesson2/thSec1Lesson2";
+import ThSec1Lesson3 from "./routes/theory/section1/lesson3/thSec1Lesson3";
+import ExSec1 from "./routes/exercises/section1/exSec1";
+import ExSec1Lesson1 from "./routes/exercises/section1/lesson1/exSec1Lesson1";
+import ExSec1Lesson2 from "./routes/exercises/section1/lesson 2/exSec1Lesson2";
+import ExSec1Lesson3 from "./routes/exercises/section1/lesson3/exSec1Lesson3";
 
 const rootElement = document.getElementById("root");
 
@@ -25,6 +31,12 @@ ReactDOM.render(
                 <Route path="admin" element={<Admin />}/>
                 <Route path="theory/thSec1" element={<ThSec1 />}/>
                 <Route path="theory/thSec1/thSec1Lesson1" element={<ThSec1Lesson1 />}/>
+                <Route path="theory/thSec1/thSec1Lesson2" element={<ThSec1Lesson2 />}/>
+                <Route path="theory/thSec1/thSec1Lesson3" element={<ThSec1Lesson3 />}/>
+                <Route path="exercises/exSec1" element={<ExSec1 />}/>
+                <Route path="exercises/exSec1/exSec1Lesson1" element={<ExSec1Lesson1 />}/>
+                <Route path="exercises/exSec1/exSec1Lesson2" element={<ExSec1Lesson2 />}/>
+                <Route path="exercises/exSec1/exSec1Lesson3" element={<ExSec1Lesson3 />}/>
             </Route>
         </Routes>
     </Router>,

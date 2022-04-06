@@ -1,0 +1,44 @@
+
+
+.verticalBox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.horizontalBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.paragraph1, .paragraph2, .paragraph3, .paragraph4{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+.paragraph1{
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph3{
+
+}
+
+.paragraph4{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
