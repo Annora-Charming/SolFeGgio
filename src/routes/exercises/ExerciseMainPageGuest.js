@@ -1,8 +1,7 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import NavBar from "../../components/NavBar";
+import {useNavigate} from "react-router-dom";
 
 function ExerciseMainPageGuest() {
+    const navigate = useNavigate();
     return (
         <div className="wrapper">
             <div className="outerContent">
@@ -12,14 +11,16 @@ function ExerciseMainPageGuest() {
                         <p>В этом разделе можно решать практические упражнения и тесты чтобы закрепить или повторить
                             материал. </p>
                     </div>
-                    <img src="../../../public/Hippo.png"/>
+                    <img src="/Hippo.png"/>
                 </div>
                 <div className="innerContent">
                     <div className="box">
                         <div className="infoCard">
                             <h3>Нотная грамота</h3>
                             <p>бла бла бла</p>
-                            <button>Решать</button>
+                            <button onClick={() => navigate("/exercises/exSec1")}>
+                                Решать
+                            </button>
                         </div>
                         <div className="infoCard">
                             <h3>Интервалы</h3>
