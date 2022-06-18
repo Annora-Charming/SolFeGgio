@@ -16,6 +16,7 @@ function ThSec1() {
                                     <p onClick={() => navigate("/theory/thSec1/thSec1Lesson2")}>Занятие 2</p>
                                     <p onClick={() => navigate("/theory/thSec1/thSec1Lesson3")}>Занятие 3</p>
                                     <p onClick={() => navigate("/theory/thSec1/thSec1Lesson4")}>Занятие 4</p>
+                                    <p onClick={() => navigate("/theory/thSec1/thSec1Lesson5")}>Занятие 5</p>
                                 </div>
                             </div>
                         </div>

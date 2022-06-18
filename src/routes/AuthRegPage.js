@@ -2,7 +2,6 @@ import React from "react";
 import {useNavigate} from 'react-router-dom';
 
 function AuthRegPage() {
-    const [role, setRole] = React.useState("guest");
     const [isAuth, setIsAuth] = React.useState(true);
     const [login, setLogin] = React.useState("");
     const [email, setEmail] = React.useState("");
@@ -19,22 +18,22 @@ function AuthRegPage() {
             let info = [login, password];
             const response = await fetch('http://localhost:3001/auth/?q=' + info);
             const res = await response.json();
-            if (res === "It's admin") {
-                setRole("Admin");
-                console.log("It was Admin");
-                navigate("/admin");
-            } else if (res === "It's user") {
-                setRole("User");
-                console.log("It was User");
-            } else {
-                setTestResult(res);
+            if (res === "Что-то пошло не так. Попробуйте еще раз.") {
+                setTestResult("Что-то пошло не так. Попробуйте еще раз.");
+            } else if (res === "Такого пользователя не существует!") {
+                setTestResult("Такого пользователя не существует!");
+            } else if (res === "Неверный пароль") {
+                setTestResult("Неверный пароль");
+            }
+            else {
+                setTestResult(res); //пока что приходит токен
             }
         }
     }
 
     async function registration() {
         setTestResult("");
-        let info = [login, email, password];
+        let info = [login, email, password, 0];
         if ((login === "") || (email === "") || (password === "")) {
             setTestResult("Все поля должны быть заполнены");
         } else if (errorText === "") {
@@ -82,7 +81,7 @@ function AuthRegPage() {
             if (isAuth === true) {
                 return <>
                     <div className="infoBox">
-                        <p>Логин</p>
+                        <p>Введите логин или Email</p>
                         <input placeholder="Логин" onChange={e => setLogin(e.target.value)} value={login}/>
                     </div>
                     <div className="infoBox">
@@ -95,15 +94,15 @@ function AuthRegPage() {
             } else {
                 return <>
                     <div className="infoBox">
-                        <p>Логин</p>
+                        <p>Придумайте логин</p>
                         <input placeholder="Логин" onChange={e => setLogin(e.target.value)} value={login}/>
                     </div>
                     <div className="infoBox">
-                        <p>Логин</p>
+                        <p>Введите Email</p>
                         <input type="email" placeholder="email" onChange={e => setEmail(e.target.value)} value={email}/>
                     </div>
                     <div className="infoBox">
-                        <p>Пароль</p>
+                        <p>Придумайте пароль</p>
                         <input type="password" placeholder="Пароль" onChange={e => setPassword(e.target.value)}
                                value={password}/>
                     </div>

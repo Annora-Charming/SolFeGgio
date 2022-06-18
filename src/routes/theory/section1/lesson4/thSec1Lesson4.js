@@ -43,9 +43,9 @@ function ThSec1Lesson4() {
                                     <p><b>Вниз</b> от первой следуют: <b>Малая</b>, <b>Большая</b>, <b>Контроктава</b> и <b>Субконтроктава</b>.</p>
                                     <img width="80%" src={keys3}/>
                                 </div>
-                                <button onClick={() => navigate("/exercises/exSec1/exSec1Lesson3")}>Задания к занятию
+                                <button onClick={() => navigate("/exercises/exSec1/exSec1Lesson4")}>Задания к занятию
                                 </button>
-                                <button onClick={() => navigate("/theory/thSec1/thSec1Lesson4")}>Следующее занятие
+                                <button onClick={() => navigate("/theory/thSec1/thSec1Lesson5")}>Следующее занятие
                                 </button>
                             </div>
                         </div>
